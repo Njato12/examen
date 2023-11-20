@@ -1,0 +1,110 @@
+.wrap_Accueil{
+    position: relative;
+    .triangle1{
+        position: absolute;
+        top: 84px;
+        left: 573px;
+    }
+    .triangle2{
+        position: absolute;
+        bottom: 43px;
+        left: 83px;
+        transform: rotate(-102deg);
+
+    }
+    .triangle3{
+        position: absolute;
+        bottom: 51px;
+        right: 120px;
+        transform: rotate(70deg);
+    }
+    .rond1{
+        position: absolute;
+        top: 250px;
+        right: 80px;
+    }
+    .rond2{
+        position: absolute;
+        bottom: 199px;
+        right: 554px;
+    }
+    .rond3{
+        position: absolute;
+        bottom: 104px;
+        left: 374px;
+    }
+    // .image{
+    //     :hover{
+            
+    //     }
+    // }
+    .image1{
+        position: absolute;
+        width: 150px;
+        height: 150px;
+        top: 74px;
+        right: 472px;
+    }
+    .image2{
+        position: absolute;
+        width: 250px;
+        height: 250px;
+        top: 222px;
+        left: 448px;
+    }
+    .image3{
+        position: absolute;
+        width: 200px;
+        height: 200px;
+        top: 274px;
+        right: 252px;
+    }
+    
+    
+}
+.accueil {
+    @apply flex items-center flex-wrap relative;
+    padding: 0 60px;
+    height: 100vh;
+    
+    h1{
+        font-size: 60px;
+    }
+    
+    p{
+        font-size: 20px;
+    }
+    button{
+        font-size: 16px;
+    }
+    .menu{
+        position: absolute;
+        right: 60px;
+    }
+}
+.letter{
+    color: #fff;
+}
+@media(min-width:1440px){
+    .image1{
+        position: absolute;
+        width: 200px;
+        height: 200px;
+        top: 74px;
+        right: 472px;
+    }
+    .image2{
+        position: absolute;
+        width: 300px;
+        height: 300px;
+        top: 222px;
+        left: 448px;
+    }
+    .image3{
+        position: absolute;
+        width: 250px;
+        height: 250px;
+        top: 274px;
+        right: 252px;
+    }
+}

@@ -1,0 +1,103 @@
+.container_competence{
+    position: relative;
+    .exagC1{
+        position: absolute;
+        top: 170px;
+        left: 0;
+        z-index: -1;
+    }
+    .exagC2{
+        position: absolute;
+        top: 180px;
+        z-index: -1;
+        right: 0
+    }
+    .rondComp{
+        position: absolute;
+        left: 152px;
+        bottom: 60px;
+    }
+    .triangleComp{
+        position: absolute;
+        left: 370px;
+        bottom: 10px;
+    }
+    .triangleComp2{
+        position: absolute;
+        right: 248px;
+        bottom: 60px;
+        transform: rotate(-69.79deg);
+    }
+}
+.competence{
+    width: 100%;
+    height: 100vh;
+    padding: 0 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 50px;
+
+}
+.wrapCardCompetence{
+    padding: 20px;
+    border-radius: 20px;
+    background-color: var(--blue);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+   
+}
+.cardCompetence{
+    padding: 20px 50px;
+    border-radius: 20px;
+    background-color: var(--primary);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+
+    gap: 50px;
+    p{
+        //width: 467px;
+        font-size: 16px;
+    }
+    
+}
+.competenceS{
+    opacity: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 10px;
+    padding: 20px;
+}
+.language{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    justify-items: center;
+    gap: 20px;
+}
+.skill{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50px;
+    img{
+        border-radius: 10px;
+        background-color: #fff;
+    }
+   p{   
+    font-size: 16px;
+    text-align: center;
+   }
+}
+@media(min-width:1440px){
+    .exagC2{
+        position: absolute;
+        top: 280px;
+        z-index: -1;
+        right: 0
+    }
+}

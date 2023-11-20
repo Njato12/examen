@@ -1,24 +1,25 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import './style.scss'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import Accueil from './section/accueil/Accueil';
+import Competence from './section/competence/Competence';
+import Apropos from './section/apropos/Apropos';
+import Contact from './section/contact/Contact';
+import Footer from './section/footer/Footer';
+import Header from './components/layout/header/Header';
 
 function App() {
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="wrap_header">
+        <Header />
+      </div>
+      <Accueil />
+      <Competence />
+      <Apropos />
+      <Contact />
+      <Footer />
     </div>
   );
 }

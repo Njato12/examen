@@ -1,0 +1,46 @@
+.wrap_apropos{
+    position: relative;
+    .exagAp1{
+        position: absolute;
+        top: 200px;
+        left: 0;
+    }
+    .exagAp2{
+        position: absolute;
+        top: 150px;
+        right: 0;
+    }
+    .triAp{
+        position: absolute;
+        top: 45px;
+        right: 498px;
+        transform: rotate(-102.32deg);
+    }
+    .rondApTop{
+        position: absolute;
+        right: 210px;
+        bottom: 180px;
+    }
+    .rondApBottom{
+        position: absolute;
+        left: 400px;
+        bottom: 18px;
+    }
+}
+.container_apropos{
+    height: 100vh;
+    @apply flex items-center justify-center;
+    flex-direction: column;
+    gap: 50px;
+    p{
+        font-size: 32px 
+    }
+}
+.apropos{
+    @apply flex items-center justify-center;
+    gap: 50px;
+    img{
+        width: calc(398 * var(--res));
+    }
+
+}

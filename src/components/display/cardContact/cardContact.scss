@@ -1,0 +1,43 @@
+.wrap_cardContact{
+    padding: 10px;
+    background-color: var(--primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border-radius: 20px
+}
+.input{
+    @apply flex flex-col;
+    
+}
+.cardMessage{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.message{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    p{
+        color: #0A1112;
+    }
+    textarea{
+        padding: 10px;
+        width: 426px;
+        height: 149px;
+        background-color: var(--blue);
+        border: solid 5px #fff;
+        border-radius: 20px;
+        outline: none;
+    }
+}
+.button{
+    padding: 10px;
+}
+.buttonSend{
+    padding: 10px 20px;
+    background-color: var(--blue);
+}

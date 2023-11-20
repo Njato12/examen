@@ -1,0 +1,19 @@
+.header {
+    margin: 23px auto 16px;
+    height: 38px;
+    display: inline-flex;
+    padding: 10px 70px;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    border-radius: 20px;
+    background: var(--primary);
+}
+// .image{
+//     scale: 1;
+// }
+.nav {
+    background-color: none;
+    font-size: 16px;
+    padding: 0;
+}
