@@ -33,11 +33,6 @@
         bottom: 104px;
         left: 374px;
     }
-    // .image{
-    //     :hover{
-            
-    //     }
-    // }
     .image1{
         position: absolute;
         width: 150px;
@@ -84,27 +79,4 @@
 }
 .letter{
     color: #fff;
-}
-@media(min-width:1440px){
-    .image1{
-        position: absolute;
-        width: 200px;
-        height: 200px;
-        top: 74px;
-        right: 472px;
-    }
-    .image2{
-        position: absolute;
-        width: 300px;
-        height: 300px;
-        top: 222px;
-        left: 448px;
-    }
-    .image3{
-        position: absolute;
-        width: 250px;
-        height: 250px;
-        top: 274px;
-        right: 252px;
-    }
 }
