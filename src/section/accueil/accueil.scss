@@ -3,7 +3,7 @@
     .triangle1{
         position: absolute;
         top: 84px;
-        left: 573px;
+        left: 400px ;
     }
     .triangle2{
         position: absolute;
@@ -21,12 +21,12 @@
     .rond1{
         position: absolute;
         top: 250px;
-        right: 80px;
+        right: 140px;
     }
     .rond2{
         position: absolute;
-        bottom: 199px;
-        right: 554px;
+        bottom: 200px;
+        right: 350px;
     }
     .rond3{
         position: absolute;
@@ -35,24 +35,27 @@
     }
     .image1{
         position: absolute;
-        width: 150px;
-        height: 150px;
+        width: 90px;
+        height: 90px;
         top: 74px;
         right: 472px;
+        z-index: -1;
     }
     .image2{
         position: absolute;
-        width: 250px;
-        height: 250px;
+        width: 150px;
+        height: 150px;
         top: 222px;
-        left: 448px;
+        left: 450px;
+        z-index: -1;
     }
     .image3{
         position: absolute;
-        width: 200px;
-        height: 200px;
-        top: 274px;
-        right: 252px;
+        width: 100px;
+        height: 100px;
+        top: 350px;
+        right: 150px;
+        z-index: -1;
     }
     
     
@@ -79,4 +82,97 @@
 }
 .letter{
     color: #fff;
+}
+@screen xl{
+    .wrap_Accueil{
+        position: relative;
+        .triangle1{
+            position: absolute;
+            top: 84px;
+            left: 573px;
+        }
+        .triangle2{
+            position: absolute;
+            bottom: 43px;
+            left: 83px;
+            transform: rotate(-102deg);
+    
+        }
+        .triangle3{
+            position: absolute;
+            bottom: 51px;
+            right: 120px;
+            transform: rotate(70deg);
+        }
+        .rond1{
+            position: absolute;
+            top: 250px;
+            right: 80px;
+        }
+        .rond2{
+            position: absolute;
+            bottom: 199px;
+            right: 554px;
+        }
+        .rond3{
+            position: absolute;
+            bottom: 104px;
+            left: 374px;
+        }
+        .image1{
+            position: absolute;
+            width: 150px;
+            height: 150px;
+            top: 74px;
+            right: 472px;
+        }
+        .image2{
+            position: absolute;
+            width: 250px;
+            height: 250px;
+            top: 222px;
+            left: 448px;
+        }
+        .image3{
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            top: 274px;
+            right: 252px;
+        }
+        
+        
+    }
+}
+@screen lg{
+    .rond2{
+        position: absolute;
+        bottom: 199px;
+        right: 554px;
+    }
+}
+@screen md{
+    .image3{
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        top: 274px;
+        right: 252px;
+        z-index: -1;
+    }
+    .rond1{
+        position: absolute;
+        top: 250px;
+        right: 80px;
+    }
+    .rond2{
+        position: absolute;
+        bottom: 200px;
+        right: 400px;
+    }
+    .triangle1{
+        position: absolute;
+        top: 84px;
+        left: 573px;
+    }
 }

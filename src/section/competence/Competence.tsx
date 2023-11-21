@@ -120,7 +120,7 @@ function Competence() {
 
         </div>
         <div className="button">
-          <Button text='Contact' />
+          <Button className='buttonAp' text='Contact' />
         </div>
       </div>
     </div>

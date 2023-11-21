@@ -2,13 +2,13 @@
     position: relative;
     .exagC1{
         position: absolute;
-        top: 170px;
+        top: 120px;
         left: 0;
         z-index: -1;
     }
     .exagC2{
         position: absolute;
-        top: 180px;
+        top: 130px;
         z-index: -1;
         right: 0
     }
@@ -21,12 +21,14 @@
         position: absolute;
         left: 370px;
         bottom: 10px;
+        z-index: -1;
     }
     .triangleComp2{
         position: absolute;
         right: 248px;
         bottom: 60px;
         transform: rotate(-69.79deg);
+        z-index: -1;
     }
 }
 .competence{
@@ -41,7 +43,7 @@
 
 }
 .wrapCardCompetence{
-    padding: 20px;
+    padding: 10px;
     border-radius: 20px;
     background-color: var(--blue);
     display: flex;
@@ -51,17 +53,16 @@
    
 }
 .cardCompetence{
-    padding: 20px 50px;
+    padding: 10px 30px;
     border-radius: 20px;
     background-color: var(--primary);
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 
-    gap: 50px;
+    gap: 10px;
     p{
-        //width: 467px;
         font-size: 16px;
     }
     
@@ -100,5 +101,46 @@
         top: 280px;
         z-index: -1;
         right: 0
+    }
+    
+}
+
+@screen lg{
+    .exagC1{
+        position: absolute;
+        top: 170px;
+        left: 0;
+        z-index: -1;
+    }
+    .exagC2{
+        position: absolute;
+        top: 180px;
+        z-index: -1;
+        right: 0
+    }
+    .cardCompetence{
+        padding: 20px 50px;
+        border-radius: 20px;
+        background-color: var(--primary);
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        justify-content: center;
+    
+        gap: 50px;
+        p{
+            font-size: 16px;
+        }
+        
+    }
+    .wrapCardCompetence{
+        padding: 20px;
+        border-radius: 20px;
+        background-color: var(--blue);
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        box-shadow: 2px 2px 2px 2px rgba(0, 0, 255, .2);
+       
     }
 }

@@ -143,7 +143,7 @@ export default function Accueil() {
             <p className='dev'>Developpeur Front-End</p>
           </div>
           <div className="button">
-            <Button text='Contact' />
+            <Button className='buttonAp' text='Contact' />
           </div>
 
         </div>

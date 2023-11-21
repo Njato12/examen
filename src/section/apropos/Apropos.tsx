@@ -43,7 +43,7 @@ const Apropos = (props: Props) => {
     }
     )
     gsap.fromTo('.exagAp1',{
-      y:200,
+      y:150,
 
     },{
       y:0,
@@ -86,7 +86,7 @@ const Apropos = (props: Props) => {
             <p>Formé chez <span className='dev'>SAHA Academy</span></p>
           </div>
         </div>
-        <Button text='Contact' />
+        <Button className='buttonAp' text='Contact' />
 
 
       </div>

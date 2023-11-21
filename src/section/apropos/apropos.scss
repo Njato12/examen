@@ -1,46 +1,108 @@
-.wrap_apropos{
+.wrap_apropos {
     position: relative;
-    .exagAp1{
+
+    .exagAp1 {
         position: absolute;
-        top: 200px;
+        top: 170px;
         left: 0;
+        z-index: -1;
     }
-    .exagAp2{
+
+    .exagAp2 {
         position: absolute;
-        top: 150px;
+        top: 130px;
         right: 0;
+        z-index: -1;
     }
-    .triAp{
+
+    .triAp {
         position: absolute;
         top: 45px;
         right: 498px;
         transform: rotate(-102.32deg);
     }
-    .rondApTop{
+
+    .rondApTop {
         position: absolute;
         right: 210px;
-        bottom: 180px;
+        bottom: 110px;
+        z-index: -1;
     }
-    .rondApBottom{
+
+    .rondApBottom {
         position: absolute;
-        left: 400px;
+        left: 200px;
         bottom: 18px;
+        z-index: -1;
     }
 }
-.container_apropos{
+
+.container_apropos {
     height: 100vh;
     @apply flex items-center justify-center;
     flex-direction: column;
     gap: 50px;
-    p{
-        font-size: 32px 
+
+    p {
+        font-size: 20px
     }
 }
-.apropos{
-    @apply flex items-center justify-center;
-    gap: 50px;
-    img{
+
+.apropos {
+    @apply flex items-center justify-center flex-col;
+    gap: 20px;
+
+    img {
         width: calc(398 * var(--res));
     }
 
+    
+}
+.buttonAp {
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 255, .2);
+
+}
+@screen xl{
+    .exagAp1 {
+        position: absolute;
+        top: 200px;
+        left: 0;
+        z-index: -1;
+    }
+
+    .exagAp2 {
+        position: absolute;
+        top: 150px;
+        right: 0;
+        z-index: -1;
+    }
+}
+@screen lg {
+    .apropos {
+        @apply flex items-center justify-center flex-row;
+        gap: 50px;
+
+        img {
+            width: calc(398 * var(--res));
+        }
+
+    }
+
+    .container_apropos {
+        p {
+            font-size: 32px
+        }
+    }
+
+    .rondApBottom {
+        position: absolute;
+        left: 400px;
+        bottom: 18px;
+    }
+    .rondApTop {
+        position: absolute;
+        right: 210px;
+        bottom: 180px;
+        z-index: -1;
+    }
 }
