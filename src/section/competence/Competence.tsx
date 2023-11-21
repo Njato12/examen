@@ -87,6 +87,20 @@ function Competence() {
 
     })
   }, [])
+  useEffect(()=>{
+    gsap.fromTo('.language',{
+      scale:0
+    },{
+      scale:1,
+      stagger:0.5,
+      duration: 1,
+      scrollTrigger:{
+        trigger:'.cardCompetence',
+        start:'top center',
+        end: 'bottom center'
+      }
+    })
+  })
 
   return (
     <div className='container_competence'>
