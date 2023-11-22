@@ -139,7 +139,7 @@ export default function Accueil() {
               <span className='letter'>u</span>
               <span className='letter'>e</span>
             </h1>
-            <p><span>Herilaza NJATO</span></p>
+            <p>Herilaza NJATO</p>
             <p className='dev'>Developpeur Front-End</p>
           </div>
           <div className="button">

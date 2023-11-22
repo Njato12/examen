@@ -25,7 +25,7 @@ function Competence() {
       x: -200,
     }, {
       x: 0,
-      duration: 0.5,
+      duration: 1,
       ease: 'bounce',
       scrollTrigger: {
         trigger: '.exagC1',
@@ -37,7 +37,7 @@ function Competence() {
       y: -100,
     }, {
       y: 10,
-      duration: 0.5,
+      duration: 1,
       ease:'bounce',
       scrollTrigger: {
         trigger: '.exagC1',
@@ -88,12 +88,13 @@ function Competence() {
     })
   }, [])
   useEffect(()=>{
-    gsap.fromTo('.language',{
+    gsap.fromTo('.skill',{
       scale:0
     },{
       scale:1,
-      stagger:0.5,
+      stagger:0.1,
       duration: 1,
+      ease:'elastic',
       scrollTrigger:{
         trigger:'.cardCompetence',
         start:'top center',
@@ -116,7 +117,7 @@ function Competence() {
             <p>Elles sont en constantes améliorations car pour moi la joie de ce métier fait que l’on en apprend tous les jours, d’autant plus en étant impliqué, curieux et passionné.</p>
             <div className="competenceS">
               <div className="language">
-                <IconReact />
+                <IconReact/>
                 <IconJs />
                 <IconTs />
                 <IconHtml />

@@ -5,7 +5,7 @@
     padding: 8px 30px;
     justify-content: center;
     align-items: center;
-    gap: 50px;
+    gap: 10px;
     border-radius: 20px;
     background: var(--primary);
 }
@@ -14,7 +14,7 @@
     font-size: 16px;
     padding: 0;
 }
-@screen lg{
+@screen sm{
     .header {
         margin: 23px auto 16px;
         height: 38px;

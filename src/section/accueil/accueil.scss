@@ -2,8 +2,8 @@
     position: relative;
     .triangle1{
         position: absolute;
-        top: 84px;
-        left: 400px ;
+        top: 75px;
+        left: 360px ;
     }
     .triangle2{
         position: absolute;
@@ -21,40 +21,40 @@
     .rond1{
         position: absolute;
         top: 250px;
-        right: 140px;
+        right: 100px;
     }
     .rond2{
         position: absolute;
         bottom: 200px;
-        right: 350px;
+        right: 360px;
     }
     .rond3{
         position: absolute;
-        bottom: 104px;
-        left: 374px;
+        bottom: 80px;
+        left: 250px;
     }
     .image1{
         position: absolute;
-        width: 90px;
-        height: 90px;
+        width: 120px;
+        height: 120px;
         top: 74px;
-        right: 472px;
+        right: 440px;
         z-index: -1;
     }
     .image2{
         position: absolute;
-        width: 150px;
-        height: 150px;
-        top: 222px;
-        left: 450px;
+        width: 160px;
+        height: 160px;
+        top: 180px;
+        left: 260px;
         z-index: -1;
     }
     .image3{
         position: absolute;
-        width: 100px;
-        height: 100px;
-        top: 350px;
-        right: 150px;
+        width: 140px;
+        height: 140px;
+        top: 340px;
+        right: 140px;
         z-index: -1;
     }
     
@@ -74,10 +74,6 @@
     }
     button{
         font-size: 16px;
-    }
-    .menu{
-        position: absolute;
-        right: 60px;
     }
 }
 .letter{
@@ -145,34 +141,120 @@
     }
 }
 @screen lg{
-    .rond2{
+    .triangle1{
         position: absolute;
-        bottom: 199px;
-        right: 554px;
+        top: 75px;
+        left: 360px ;
     }
-}
-@screen md{
-    .image3{
+    .triangle2{
         position: absolute;
-        width: 100px;
-        height: 100px;
-        top: 274px;
-        right: 252px;
-        z-index: -1;
+        bottom: 43px;
+        left: 83px;
+        transform: rotate(-102deg);
+
+    }
+    .triangle3{
+        position: absolute;
+        bottom: 51px;
+        right: 120px;
+        transform: rotate(70deg);
     }
     .rond1{
         position: absolute;
         top: 250px;
-        right: 80px;
+        right: 140px;
+    }
+    .rond2{
+        position: absolute;
+        bottom: 120px;
+        right: 400px;
+    }
+    .rond3{
+        position: absolute;
+        bottom: 80px;
+        left: 250px;
+    }
+    .image1{
+        position: absolute;
+        width: 120px;
+        height: 120px;
+        top: 74px;
+        right: 440px;
+        z-index: -1;
+    }
+    .image2{
+        position: absolute;
+        width: 200px;
+        height: 200px;
+        top: 222px;
+        left: 370px;
+        z-index: -1;
+    }
+    .image3{
+        position: absolute;
+        width: 140px;
+        height: 140px;
+        top: 280px;
+        right: 250px;
+        z-index: -1;
+    }
+}
+@screen md {
+    .triangle1{
+        position: absolute;
+        top: 75px;
+        left: 360px ;
+    }
+    .triangle2{
+        position: absolute;
+        bottom: 43px;
+        left: 83px;
+        transform: rotate(-102deg);
+
+    }
+    .triangle3{
+        position: absolute;
+        bottom: 51px;
+        right: 120px;
+        transform: rotate(70deg);
+    }
+    .rond1{
+        position: absolute;
+        top: 250px;
+        right: 100px;
     }
     .rond2{
         position: absolute;
         bottom: 200px;
-        right: 400px;
+        right: 360px;
     }
-    .triangle1{
+    .rond3{
         position: absolute;
-        top: 84px;
-        left: 573px;
+        bottom: 80px;
+        left: 250px;
+    }
+    .image1{
+        position: absolute;
+        width: 120px;
+        height: 120px;
+        top: 74px;
+        right: 440px;
+        z-index: -1;
+    }
+    .image2{
+        position: absolute;
+        width: 160px;
+        height: 160px;
+        top: 222px;
+        left: 370px;
+        z-index: -1;
+    }
+    .image3{
+        position: absolute;
+        width: 140px;
+        height: 140px;
+        top: 380px;
+        right: 180px;
+        z-index: -1;
     }
 }
