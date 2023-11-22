@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import { useEffect } from 'react'
 import './competence.scss'
 import CardTitleSection from '../../components/display/cardTitleSection/CardTitleSection'
 import Button from '../../components/general/button/Button'
@@ -18,6 +18,8 @@ import Rond from '../../Assets/svg/Rond'
 import Triangle from '../../Assets/svg/Triangle'
 import { gsap } from "gsap";
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
+import { Link } from 'react-scroll'
+
 gsap.registerPlugin(ScrollTrigger)
 function Competence() {
   useEffect(() => {
@@ -38,7 +40,7 @@ function Competence() {
     }, {
       y: 10,
       duration: 1,
-      ease:'bounce',
+      ease: 'bounce',
       scrollTrigger: {
         trigger: '.exagC1',
         start: 'top center',
@@ -87,17 +89,17 @@ function Competence() {
 
     })
   }, [])
-  useEffect(()=>{
-    gsap.fromTo('.skill',{
-      scale:0
-    },{
-      scale:1,
-      stagger:0.1,
+  useEffect(() => {
+    gsap.fromTo('.skill', {
+      scale: 0
+    }, {
+      scale: 1,
+      stagger: 0.1,
       duration: 1,
-      ease:'elastic',
-      scrollTrigger:{
-        trigger:'.cardCompetence',
-        start:'top center',
+      ease: 'elastic',
+      scrollTrigger: {
+        trigger: '.cardCompetence',
+        start: 'top center',
         end: 'bottom center'
       }
     })
@@ -117,7 +119,7 @@ function Competence() {
             <p>Elles sont en constantes améliorations car pour moi la joie de ce métier fait que l’on en apprend tous les jours, d’autant plus en étant impliqué, curieux et passionné.</p>
             <div className="competenceS">
               <div className="language">
-                <IconReact/>
+                <IconReact />
                 <IconJs />
                 <IconTs />
                 <IconHtml />
@@ -135,7 +137,9 @@ function Competence() {
 
         </div>
         <div className="button">
-          <Button className='buttonAp' text='Contact' />
+          <Link to='contact' smooth={true} duration={500}>
+            <Button className='buttonAp' text='Contact' />
+          </Link>
         </div>
       </div>
     </div>

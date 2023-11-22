@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import { useEffect } from 'react'
 import profil from '../../Assets/image/contact.png'
 import './contact.scss'
 import CardContact from '../../components/display/cardContact/CardContact'
@@ -76,7 +76,7 @@ const Contact = (props: Props) => {
       y:0,
       duration:1,
       scrollTrigger:{
-        trigger:'.exagCont2',
+        trigger:'.exagCont1',
         start:'top center',
         end: 'bottom center'
       },

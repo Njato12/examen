@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import { useEffect } from 'react'
 import about from '../../Assets/image/about.png'
 import './apropos.scss'
 import CardTitleSection from '../../components/display/cardTitleSection/CardTitleSection'
@@ -8,22 +8,24 @@ import ExagonAp2 from '../../Assets/svg/ExagonAp2'
 import Triangle from '../../Assets/svg/Triangle'
 import Rond from '../../Assets/svg/Rond'
 import { gsap } from "gsap";
+import { Link } from 'react-scroll'
+
 
 type Props = {}
 
 const Apropos = (props: Props) => {
   useEffect(() => {
     gsap.fromTo('.triAp', {
-      scale:0,
+      scale: 0,
       rotateY: 360,
-      duration:2,
-      repeat:-1,
+      duration: 2,
+      repeat: -1,
       yoyo: true
-    },{
-      scale:1,
-      rotateY:0,
-      duration:2,
-      repeat:-1,
+    }, {
+      scale: 1,
+      rotateY: 0,
+      duration: 2,
+      repeat: -1,
       yoyo: true
 
     }
@@ -34,7 +36,7 @@ const Apropos = (props: Props) => {
       stagger: {
         each: 1,
         yoyo: true,
-        repeat:-1
+        repeat: -1
 
       },
       scale: 1,
@@ -42,41 +44,41 @@ const Apropos = (props: Props) => {
 
     }
     )
-    gsap.fromTo('.exagAp1',{
-      y:150,
+    gsap.fromTo('.exagAp1', {
+      y: 150,
 
-    },{
-      y:0,
-      duration:1,
-      scrollTrigger:{
-        trigger:'.exagAp1',
-        start:'top center',
+    }, {
+      y: 0,
+      duration: 1,
+      scrollTrigger: {
+        trigger: '.exagAp2',
+        start: 'top center',
         end: 'bottom center'
       },
-      ease:'bounce'
+      ease: 'bounce'
     })
-    gsap.fromTo('.exagAp2',{
-      y:-200,
+    gsap.fromTo('.exagAp2', {
+      y: -200,
 
-    },{
-      y:0,
-      duration:1,
-      scrollTrigger:{
-        trigger:'.exagAp2',
-        start:'top center',
+    }, {
+      y: 0,
+      duration: 1,
+      scrollTrigger: {
+        trigger: '.exagAp2',
+        start: 'top center',
         end: 'bottom center'
       },
-      ease:'bounce'
+      ease: 'bounce'
     })
   }, [])
   return (
     <div className='wrap_apropos' id='apropos'>
       <CardTitleSection content='Apropos' />
-      <ExagonAp1 className='exagAp1'/>
-      <ExagonAp2 className='exagAp2'/>
-      <Triangle className='triAp'/>
-      <Rond className='ronde rondApTop'/>
-      <Rond className='ronde rondApBottom'/>
+      <ExagonAp1 className='exagAp1' />
+      <ExagonAp2 className='exagAp2' />
+      <Triangle className='triAp' />
+      <Rond className='ronde rondApTop' />
+      <Rond className='ronde rondApBottom' />
       <div className="container_apropos">
         <div className="apropos">
           <img src={about} alt="" />
@@ -86,7 +88,9 @@ const Apropos = (props: Props) => {
             <p>Formé chez <span className='dev'>SAHA Academy</span></p>
           </div>
         </div>
-        <Button className='buttonAp' text='Contact' />
+        <Link to='contact' smooth={true} duration={500}>
+          <Button className='buttonAp' text='Contact' />
+        </Link>
 
 
       </div>

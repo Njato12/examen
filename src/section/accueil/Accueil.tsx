@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import { useEffect } from 'react'
 import './accueil.scss'
 import Button from '../../components/general/button/Button'
 import CardTitleSection from '../../components/display/cardTitleSection/CardTitleSection'
@@ -8,6 +8,8 @@ import image1 from '../../Assets/image/image1.png'
 import image2 from '../../Assets/image/image2.png'
 import image3 from '../../Assets/image/image3.png'
 import { gsap } from "gsap";
+import { Link } from 'react-scroll'
+
 
 const tl = gsap.timeline()
 
@@ -143,7 +145,10 @@ export default function Accueil() {
             <p className='dev'>Developpeur Front-End</p>
           </div>
           <div className="button">
-            <Button className='buttonAp' text='Contact' />
+            <Link to='contact' smooth={true} duration={500}>
+              <Button className='buttonAp' text='Contact' />
+            </Link>
+            
           </div>
 
         </div>
