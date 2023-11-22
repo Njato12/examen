@@ -1,6 +1,5 @@
 import React from 'react';
 import './style.scss'
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Accueil from './section/accueil/Accueil';
 import Competence from './section/competence/Competence';
 import Apropos from './section/apropos/Apropos';

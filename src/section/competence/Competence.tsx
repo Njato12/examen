@@ -107,7 +107,7 @@ function Competence() {
 
   return (
     <div className='container_competence' id='competence'>
-      <CardTitleSection content='Compétence' />
+      <CardTitleSection content='Compétences' />
       <ExagonComp1 className='exagC1' />
       <ExagonComp2 className='exagC2' />
       <Rond className='rondComp' />

@@ -60,6 +60,7 @@
 }
 .buttonAp {
     box-shadow: 2px 2px 2px 2px rgba(0, 0, 255, .2);
+    font-size: 12px;
 
 }
 @screen xl{
@@ -104,5 +105,10 @@
         right: 210px;
         bottom: 180px;
         z-index: -1;
+    }
+}
+@screen sm{
+    .buttonAp{
+        font-size: 16px
     }
 }

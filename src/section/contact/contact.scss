@@ -14,7 +14,7 @@
     }
     .rondCont{
         position: absolute;
-        top: 123px;
+        top: 150px;
         right: 200px;
         z-index: -1;
     }
@@ -22,11 +22,13 @@
         position: absolute;
         left: 116px;
         top: 230px;
+        z-index: -1;
     }
     .triangleContBottom{
         position: absolute;
         right: 20px;
         bottom: 100px;
+        z-index: -1;
     }
 }
 .contact{
@@ -71,5 +73,11 @@
         position: absolute;
         right: 69px;
         bottom: 100px;
+    }
+    .rondCont{
+        position: absolute;
+        top: 123px;
+        right: 200px;
+        z-index: -1;
     }
 }

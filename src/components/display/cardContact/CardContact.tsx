@@ -52,7 +52,7 @@ const CardContact = (props: Props) => {
 
     try {
       if (!a || !b || !c || !d) {
-        alert('veuiller tous remplir les formulaire')
+        alert('veuiller tous remplir les formulaires')
       }
       else {
         await axios.post("https://api.emailjs.com/api/v1.0/email/send", data)

@@ -15,17 +15,18 @@
     .rondComp{
         position: absolute;
         left: 152px;
-        bottom: 60px;
+        bottom: 220px;
+        z-index: -1;
     }
     .triangleComp{
         position: absolute;
-        left: 370px;
+        left: 220px;
         bottom: 10px;
         z-index: -1;
     }
     .triangleComp2{
         position: absolute;
-        right: 248px;
+        right: 220px;
         bottom: 60px;
         transform: rotate(-69.79deg);
         z-index: -1;
@@ -40,10 +41,11 @@
     justify-content: center;
     flex-direction: column;
     gap: 50px;
+    z-index: 1;
 
 }
 .wrapCardCompetence{
-    padding: 10px;
+    padding: 5px;
     border-radius: 20px;
     background-color: var(--blue);
     display: flex;
@@ -53,7 +55,7 @@
    
 }
 .cardCompetence{
-    padding: 10px 30px;
+    padding: 5px 8px;
     border-radius: 20px;
     background-color: var(--primary);
     display: flex;
@@ -61,9 +63,9 @@
     align-items: center;
     justify-content: center;
 
-    gap: 10px;
+    gap: 5px;
     p{
-        font-size: 16px;
+        font-size: 12px;
     }
     
 }
@@ -85,13 +87,13 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 50px;
+    width: 30px;
     img{
         border-radius: 10px;
         background-color: #fff;
     }
    p{   
-    font-size: 16px;
+    font-size: 10px;
     text-align: center;
    }
 }
@@ -142,5 +144,55 @@
         gap: 10px;
         box-shadow: 2px 2px 2px 2px rgba(0, 0, 255, .2);
        
+    }
+}
+@screen sm{
+    .cardCompetence{
+        padding: 10px 30px;
+        border-radius: 20px;
+        background-color: var(--primary);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    
+        gap: 10px;
+        p{
+            font-size: 16px;
+        }
+        
+    }
+    .rondComp{
+        position: absolute;
+        left: 152px;
+        bottom: 60px;
+        z-index: -1;
+    }
+    .triangleComp{
+        position: absolute;
+        left: 370px;
+        bottom: 10px;
+        z-index: -1;
+    }
+    .triangleComp2{
+        position: absolute;
+        right: 248px;
+        bottom: 60px;
+        transform: rotate(-69.79deg);
+        z-index: -1;
+    }
+    .skill{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50px;
+        img{
+            border-radius: 10px;
+            background-color: #fff;
+        }
+       p{   
+        font-size: 16px;
+        text-align: center;
+       }
     }
 }
