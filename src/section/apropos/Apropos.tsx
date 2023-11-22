@@ -70,7 +70,7 @@ const Apropos = (props: Props) => {
     })
   }, [])
   return (
-    <div className='wrap_apropos'>
+    <div className='wrap_apropos' id='apropos'>
       <CardTitleSection content='Apropos' />
       <ExagonAp1 className='exagAp1'/>
       <ExagonAp2 className='exagAp2'/>

@@ -104,7 +104,7 @@ function Competence() {
   })
 
   return (
-    <div className='container_competence'>
+    <div className='container_competence' id='competence'>
       <CardTitleSection content='Compétence' />
       <ExagonComp1 className='exagC1' />
       <ExagonComp2 className='exagC2' />

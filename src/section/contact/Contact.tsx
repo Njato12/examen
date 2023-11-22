@@ -86,7 +86,7 @@ const Contact = (props: Props) => {
   }, [])
   
   return (
-    <div className='wrap_contact'>
+    <div className='wrap_contact' id='contact'>
       <CardTitleSection content='Contact' />
       <ExagonCont1 className='exagCont1'/>
       <ExagonCont2 className='exagCont2'/>

@@ -1,6 +1,6 @@
 import React from 'react'
 import Button from '../../general/button/Button'
-import { Link } from 'react-router-dom'
+import {Link} from 'react-scroll'
 import './header.scss'
 type Props = {}
 

@@ -114,7 +114,7 @@ export default function Accueil() {
 
 
   return (
-    <div className='wrap_Accueil'>
+    <div className='wrap_Accueil' id='accueil'>
       <CardTitleSection content='Accueil' />
       <Triangle className='triangle1' />
       <Triangle className='triangle2' />
