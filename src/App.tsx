@@ -1,4 +1,4 @@
-import React from 'react';
+
 import './style.scss'
 import Accueil from './section/accueil/Accueil';
 import Competence from './section/competence/Competence';
