@@ -5,7 +5,6 @@ import CardContact from '../../components/display/cardContact/CardContact'
 import CardTitleSection from '../../components/display/cardTitleSection/CardTitleSection'
 import ExagonCont1 from '../../Assets/svg/ExagonCont1'
 import ExagonCont2 from '../../Assets/svg/ExagonCont2'
-import Rond from '../../Assets/svg/Rond'
 import Triangle from '../../Assets/svg/Triangle'
 import { gsap } from "gsap";
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
@@ -47,15 +46,6 @@ const Contact = (props: Props) => {
 
     }
     )
-    gsap.fromTo('.rondCont', {
-      scale: 0.5,
-    }, {
-      scale: 1,
-      yoyo: true,
-      repeat: -1,
-      duration: 2,
-
-    })
     gsap.fromTo('.exagCont1',{
       y:-200,
 
@@ -90,7 +80,6 @@ const Contact = (props: Props) => {
       <CardTitleSection content='Contact' />
       <ExagonCont1 className='exagCont1'/>
       <ExagonCont2 className='exagCont2'/>
-      <Rond className='rondCont'/>
       <Triangle className='triangleContTop'/>
       <Triangle className='triangleContBottom'/>
       <div className="contact">
