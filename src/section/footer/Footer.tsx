@@ -8,9 +8,6 @@ const Footer = (props: Props) => {
     <div className='container_footer'>
       <div className="footer">
         <p>Copyright © 2023 Herilaza NJATO</p>
-        <p>Accueil</p>
-        <p>Compétence</p>
-        <p>Apropos</p>
       </div>
     </div>
   )
