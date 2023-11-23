@@ -146,22 +146,10 @@
        
     }
 }
-@screen sm{
-    .cardCompetence{
-        padding: 10px 30px;
-        border-radius: 20px;
-        background-color: var(--primary);
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+@screen md{
     
-        gap: 10px;
-        p{
-            font-size: 16px;
-        }
-        
-    }
+}
+@screen sm{
     .rondComp{
         position: absolute;
         left: 152px;

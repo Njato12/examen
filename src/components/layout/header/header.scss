@@ -1,5 +1,6 @@
 .header {
-    margin: 23px auto 16px;
+    position: fixed;
+    margin: 10px auto 16px;
     height: 38px;
     display: inline-flex;
     padding: 8px 30px;
@@ -8,6 +9,7 @@
     gap: 10px;
     border-radius: 20px;
     background: var(--primary);
+    z-index: 2;
 }
 .nav {
     background-color: none;

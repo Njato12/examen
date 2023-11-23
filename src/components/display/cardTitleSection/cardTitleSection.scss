@@ -1,14 +1,25 @@
 .cardTitle {
-    height: 58px;
+    height: 38px;
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    padding: 10px 50px;
+    padding: 10px 25px;
     gap: 10px;
     border-radius: 0px 20px 20px 0px;
     background: var(--blue);
-    font-size: 20px;
+    font-size: 16px;
 }
-@screen sm{
-    font-size: 32px;
+
+@screen sm {
+    .cardTitle {
+        height: 58px;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 50px;
+        gap: 10px;
+        border-radius: 0px 20px 20px 0px;
+        background: var(--blue);
+        font-size: 32px;
+    }
 }
