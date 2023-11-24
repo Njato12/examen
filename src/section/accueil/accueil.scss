@@ -63,7 +63,7 @@
 }
 .accueil {
     @apply flex items-center flex-wrap relative;
-    padding: 0 60px;
+    padding: 0 30px ;
     height: 100vh;
     
     h1{
@@ -175,6 +175,29 @@
         bottom: 80px;
         left: 250px;
     }
+
+    .image1{
+        position: absolute;
+        width: 150px;
+        height: 150px;
+        top: 74px;
+        right: 472px;
+    }
+    .image2{
+        position: absolute;
+        width: 250px;
+        height: 250px;
+        top: 222px;
+        left: 448px;
+    }
+    .image3{
+        position: absolute;
+        width: 200px;
+        height: 200px;
+        top: 274px;
+        right: 252px;
+    }
+
     .image1{
         position: absolute;
         width: 120px;
