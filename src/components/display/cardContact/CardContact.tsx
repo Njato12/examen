@@ -62,6 +62,7 @@ const CardContact = (props: Props) => {
         email.lastElementChild.lastElementChild.value = ''
         sujet.lastElementChild.lastElementChild.value = ''
         message.value = ''
+        alert('message envoyé')
       }
 
 
